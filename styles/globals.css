@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    body {
+        @apply bg-neutral;
+    }
+    
+    small {
+        @apply text-sm;
+    }
+    
+    #__next {
+        @apply min-h-screen flex flex-col justify-between;
+    }
+
+    .input, .btn, .modal-box {
+        @apply rounded;
+    }
+    
+    /* .modal-box {
+        @apply bg-base-100;
+    } */
+    
+    .btn {
+        @apply border-0 h-auto;
+    }
+
+    .container {
+        @apply lg:w-11/12;
+    }
+}
