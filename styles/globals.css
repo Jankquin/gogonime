@@ -5,31 +5,39 @@
 
 
 @layer components {
-    body {
-        @apply bg-neutral;
-    }
-    
-    small {
-        @apply text-sm;
-    }
-    
     #__next {
         @apply min-h-screen flex flex-col justify-between;
     }
 
-    .input, .btn, .modal-box {
-        @apply rounded;
-    }
-    
-    /* .modal-box {
-        @apply bg-base-100;
-    } */
-    
-    .btn {
-        @apply border-0 h-auto;
+    body {
+        @apply bg-base-300;
     }
 
-    .container {
-        @apply lg:w-11/12;
+    .btn {
+        @apply border-0 normal-case h-auto;
+    }
+    
+    .btn-xs {
+        @apply min-h-[1.5rem] font-light text-xs;
+    }
+    
+    .btn-sm {
+        @apply min-h-[2rem] font-light text-sm;
+    }
+    
+    .btn-md {
+        @apply min-h-[2.5rem];
+    }
+    
+    .btn-lg {
+        @apply min-h-[3rem];
+    }
+    
+    .btn-circle {
+        @apply !rounded-full;
+    }
+
+    .input, .btn, .modal-box, .rounded {
+        @apply rounded-sm;
     }
 }
