@@ -28,7 +28,7 @@ export default function MyApp({ Component, pageProps }) {
         <Layout>
             <Head>
                 <title>Watch Free Hentai, Manga, Doujin, NSFW, Cosplay, Video Streams Online | Eronime</title>
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="Watch hentai online, read doujin, NSFW free download HD on mobile phone tablet laptop desktop" />
                 <link rel="canonical" href="https://eronime.com"/>

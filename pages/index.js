@@ -59,7 +59,7 @@ export default function Home() {
 
 
 
-    console.log(CarouselList)
+
 
     return (
         <>
@@ -119,8 +119,8 @@ export default function Home() {
                             )}
                             
                             {/* Score */}
-                            {CarouselList[Req.Carousel]?.Type == "manhwa" &&
-                                <a href={`/${CarouselList[Req.Carousel]?.Type}/${CarouselList[Req.Carousel]?.Slug}`} className="btn btn-primary md:btn-md btn-sm shadow" aria-label={Req.Manhwa[Req.Carousel]?.Title}>
+                            {Req.Filter.Type == "manhwa" &&
+                                <a href={`/manhwa/${Req.Manhwa[Req.Carousel]?.Slug}`} className="btn btn-primary md:btn-md btn-sm shadow" aria-label={Req.Manhwa[Req.Carousel]?.Title}>
                                     <strong>{Req.Manhwa[Req.Carousel]?.Score}</strong>
                                 </a>
                             }
@@ -134,8 +134,35 @@ export default function Home() {
                         <div className="absolute bg-gradient-to-r from-base-300 via-base-300/80 to-base-300/40 w-full h-full right-0" />
                     </div>
                 }
+
+                {/* {Req.Filter.Type == "manhwa" && Req.Manhwa[Req.Carousel]?.Image && 
+                    <div className="absolute w-6/12 h-full top-0 right-0">
+                        <div style={{backgroundImage: `url(${Req.Manhwa[Req.Carousel]?.Image})`, backgroundPosition: 'center 20%'}} className="bg-cover bg-center absolute w-full h-full right-0"  />
+                        <div className="absolute bg-gradient-to-r from-base-300 via-base-300/80 to-base-300/40 w-full h-full right-0" />
+                    </div>
+                }
+
+                {Req.Filter.Type == "hentai" && Req.Hentai[Req.Carousel]?.Image && 
+                    <div className="absolute w-6/12 h-full top-0 right-0">
+                        <div style={{backgroundImage: `url(${Req.Hentai[Req.Carousel]?.Image})`, backgroundPosition: 'center 20%'}} className="bg-cover bg-center absolute w-full h-full right-0"  />
+                        <div className="absolute bg-gradient-to-r from-base-300 via-base-300/80 to-base-300/40 w-full h-full right-0" />
+                    </div>
+                }
+
+                {Req.Filter.Type == "nsfw" && Req.Nsfw[Req.Carousel]?.Image && 
+                    <div className="absolute w-6/12 h-full top-0 right-0">
+                        <div style={{backgroundImage: `url(${Req.Nsfw[Req.Carousel]?.Image})`, backgroundPosition: 'center 20%'}} className="bg-cover bg-center absolute w-full h-full right-0"  />
+                        <div className="absolute bg-gradient-to-r from-base-300 via-base-300/80 to-base-300/40 w-full h-full right-0" />
+                    </div>
+                }
+
+                {Req.Filter.Type == "cosplay" && Req.Cosplay[Req.Carousel]?.Image && 
+                    <div className="absolute w-6/12 h-full top-0 right-0">
+                        <div style={{backgroundImage: `url(${Req.Cosplay[Req.Carousel]?.Image})`, backgroundPosition: 'center 20%'}} className="bg-cover bg-center absolute w-full h-full right-0"  />
+                        <div className="absolute bg-gradient-to-r from-base-300 via-base-300/80 to-base-300/40 w-full h-full right-0" />
+                    </div>
+                } */}
                 
-                {/* masih error */}
                 <div className="absolute w-full bottom-5">
                     <div className="container flex gap-2 justify-end px-3">
                         {Req.Manhwa?.slice(0, 5).map((doc, index) => {
@@ -147,7 +174,6 @@ export default function Home() {
                 </div>
             </div>
 
-            
             {/* Content */}
             <div className="container mx-auto mb-16 p-3">        
                 {/* Manhwa */}
@@ -246,6 +272,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+
 
 
             {/* Modal Bookmark */}
