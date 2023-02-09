@@ -1,6 +1,6 @@
 import {useState } from "react";
 import Link from 'next/link'
-import Hentai from '../db/Hentai'
+import Hentai from '../api/Hentai'
 
 
 export default function Home() {
