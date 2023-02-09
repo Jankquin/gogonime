@@ -1,6 +1,6 @@
 import {useState, useEffect } from "react";
-import Hentai from '../api/Hentai'
-import Manhwa from '../api/Manhwa'
+import Hentai from '../db/Hentai'
+import Manhwa from '../db/Manhwa'
 
 
 
