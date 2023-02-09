@@ -46,7 +46,7 @@ export default function Slug() {
                 {/* Main Post */}
                 <div className="flex md:flex-row flex-col gap-2 mb-5">
                     <div className="md:w-9/12 flex flex-col gap-2">
-                        <iframe src={Req.GetHentai?.Image} className='aspect-video bg-base-100 bg-center rounded w-full' scrolling="no" frameBorder="0" allowFullScreen={true} />
+                        <iframe src={Req.GetHentai?.Embed} className='aspect-video bg-base-100 bg-center rounded w-full' scrolling="no" frameBorder="0" allowFullScreen={true} />
                     
                         <div className="bg-base-100 flex flex-col gap-2 rounded p-2">
                             <h1 className='text-2xl font-black whitespace-nowrap text-ellipsis overflow-hidden'>
