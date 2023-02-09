@@ -1,9 +1,9 @@
 import {useState, useEffect } from "react";
 import Link from 'next/link'
-import Manhwa from './db/manhwa'
-import Hentai from './db/hentai'
-import Nsfw from './db/nsfw'
-import Cosplay from './db/cosplay'
+import Manhwa from './api/manhwa'
+import Hentai from './api/hentai'
+import Nsfw from './api/nsfw'
+import Cosplay from './api/cosplay'
 
 export default function Home() {
     const [Req, setReq] = useState({
