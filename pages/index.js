@@ -144,12 +144,12 @@ export default function Home() {
                     </div>
 
                     {/* New Aploaded */}
-                    <div className="grid md:grid-cols-8 grid-cols-4 gap-1 md:gap-2">
-                        {Req.Manhwa?.slice('0', '8').map((doc, index) => 
-                            <Link key={index} href={`/manhwa/${doc.Slug}`} className="btn btn-ghost normal-case h-auto p-0" aria-label={doc.Title}>
-                                <img src={doc?.Image} className="rounded" width="240" height="320" lazy='loading' alt={doc?.Title} />
+                    <div className="grid md:grid-cols-9 grid-cols-3 gap-2">
+                        {Req.Manhwa?.slice('0', '9').map((doc, index) => 
+                            <Link key={index} href={`/manhwa/${doc.Slug}`} className="btn btn-link normal-case h-auto p-0" aria-label={doc.Title}>
+                                <img src={doc?.Image} className="rounded aspect-image" width="240" height="320" lazy='loading' alt={doc?.Title} />
 
-                                <div className='text-ellipsis text-xs whitespace-nowrap overflow-hidden text-center w-full p-3'>{doc.Title}</div>
+                                <div className='text-ellipsis text-sm whitespace-nowrap overflow-hidden text-center w-full p-2'>{doc.Title}</div>
                             </Link>
                         )}
                     </div>
@@ -168,12 +168,12 @@ export default function Home() {
                     </div>
 
                     {/* New Aploaded */}
-                    <div className="grid md:grid-cols-8 grid-cols-4 gap-1 md:gap-2">
-                        {Req.Hentai?.slice('0', '8').map((doc, index) => 
-                            <Link key={index} href={`/hentai/${doc.Slug}`} className="btn btn-ghost normal-case h-auto p-0" aria-label={doc.Title}>
-                                <img src={`${doc?.Image}`} className="rounded" width="240" height="320" lazy='loading' alt={doc?.Title} />
+                    <div className="grid md:grid-cols-9 grid-cols-3 gap-2">
+                        {Req.Hentai?.slice('0', '9').map((doc, index) => 
+                            <Link key={index} href={`/hentai/${doc.Slug}`} className="btn btn-link normal-case h-auto p-0" aria-label={doc.Title}>
+                                <img src={`${doc?.Image}`} className="rounded aspect-image" width="240" height="320" lazy='loading' alt={doc?.Title} />
                         
-                                <div className='text-ellipsis text-xs whitespace-nowrap overflow-hidden text-center w-full p-3'>{doc.Title}</div>
+                                <div className='text-ellipsis text-sm whitespace-nowrap overflow-hidden text-center w-full p-2'>{doc.Title}</div>
                             </Link>
                         )}
                     </div>
@@ -192,12 +192,12 @@ export default function Home() {
                     </div>
 
                     {/* New Aploaded */}
-                    <div className="grid md:grid-cols-8 grid-cols-4 gap-1 md:gap-2">
-                        {Req.Nsfw?.slice('0', '8').map((doc, index) => 
-                            <Link key={index} href={`/nsfw/${doc.Slug}`} className="btn btn-ghost normal-case h-auto p-0" aria-label={doc.Title}>
-                                <img src={`${doc?.Image}`} className="rounded" width="240" height="320" lazy='loading' alt={doc?.Title} />
+                    <div className="grid md:grid-cols-9 grid-cols-3 gap-2">
+                        {Req.Nsfw?.slice('0', '9').map((doc, index) => 
+                            <Link key={index} href={`/nsfw/${doc.Slug}`} className="btn btn-link normal-case h-auto p-0" aria-label={doc.Title}>
+                                <img src={`${doc?.Image}`} className="rounded aspect-image" width="240" height="320" lazy='loading' alt={doc?.Title} />
                         
-                                <div className='text-ellipsis text-xs whitespace-nowrap overflow-hidden text-center w-full p-3'>{doc.Title}</div>
+                                <div className='text-ellipsis text-sm whitespace-nowrap overflow-hidden text-center w-full p-2'>{doc.Title}</div>
                             </Link>
                         )}
                     </div>
@@ -216,12 +216,12 @@ export default function Home() {
                     </div>
 
                     {/* New Aploaded */}
-                    <div className="grid md:grid-cols-8 grid-cols-4 gap-1 md:gap-2">
-                        {Req.Cosplay?.slice('0', '8').map((doc, index) => 
-                            <Link key={index} href={`/cosplay/${doc.Slug}`} className="btn btn-ghost normal-case h-auto p-0" aria-label={doc.Title}>
-                                <img src={`${doc?.Image}`} className="rounded" width="240" height="320" lazy='loading' alt={doc?.Title} />
+                    <div className="grid md:grid-cols-9 grid-cols-3 gap-2">
+                        {Req.Cosplay?.slice('0', '9').map((doc, index) => 
+                            <Link key={index} href={`/cosplay/${doc.Slug}`} className="btn btn-link normal-case h-auto p-0" aria-label={doc.Title}>
+                                <img src={`${doc?.Image}`} className="rounded aspect-image" width="240" height="320" lazy='loading' alt={doc?.Title} />
                         
-                                <div className='text-ellipsis text-xs whitespace-nowrap overflow-hidden text-center w-full p-3'>{doc.Title}</div>
+                                <div className='text-ellipsis text-sm whitespace-nowrap overflow-hidden text-center w-full p-2'>{doc.Title}</div>
                             </Link>
                         )}
                     </div>

@@ -1,7 +1,7 @@
 import {useState, useEffect } from "react";
 import { useRouter } from 'next/router'
 import Link from "next/link";
-import Manhwa from '../../api/manhwa'
+import Manhwa from '../../../api/manhwa'
 
 
 export default function Broken() {

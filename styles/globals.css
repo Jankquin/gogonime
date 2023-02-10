@@ -13,6 +13,12 @@
         @apply bg-base-300;
     }
 
+
+
+    .btn-link {
+        @apply no-underline text-white hover:no-underline hover:opacity-75;
+    }
+
     .btn {
         @apply border-0 normal-case h-auto;
     }

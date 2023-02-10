@@ -9,7 +9,15 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+      extend: {
+        container: {
+          center: true,
+      },
+
+      aspectRatio: {
+          image: '2 / 3',
+      },
+    },
   },
   plugins: [require("daisyui")],
 }

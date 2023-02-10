@@ -81,7 +81,7 @@ export default function Broken() {
 
                             <strong className="flex flex-row gap-1">
                                 {Req.Manhwa?.Tags?.map((doc, index) => 
-                                    <button key={index} className="btn btn-xs btn-ghost normal-case font-light bg-base-300">
+                                    <button key={index} className="btn btn-xs btn-ghost btn-active normal-case font-light">
                                         {doc}
                                     </button>
                                 )}
